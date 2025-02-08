@@ -59,6 +59,31 @@
                             Home
                         </a>
                     </li>
+
+                    <li class="relative">
+                        <!-- Tombol Dropdown -->
+                        <button id="dropdownToggle"
+                            class="relative inline-flex py-2 text-primary underline-offset-4 transition-colors duration-300 
+                            hover:text-main-accent after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-0.5 
+                            after:bg-main-accent after:transition-all after:duration-300 after:origin-center hover:after:w-full hover:after:left-0">
+                            MyApps
+                        </button>
+
+                        <!-- Dropdown Menu -->
+                        <ul id="dropdownMenu" class="absolute md:absolute left-0 mt-2 hidden min-w-[180px] md:min-w-[224px] bg-white dark:bg-gray-800 
+           border border-gray-200 dark:border-gray-600 rounded-lg shadow-lg transition-all duration-300 
+           z-50 backdrop-blur-md">
+                            <li>
+                                <a href="salary-calculator.html" class="relative block px-4 py-2 text-gray-800 dark:text-gray-200 transition-colors duration-300 
+                   hover:text-[#00ffee] hover:bg-gray-100 dark:hover:bg-gray-700">
+                                    Calculator Salary
+                                </a>
+                            </li>
+                        </ul>
+
+
+                    </li>
+
                     <li>
                         <a href="#education"
                             class="relative inline-flex py-2 text-primary underline-offset-4 transition-colors duration-300 
@@ -150,12 +175,6 @@
                     Contact
                 </a>
             </div>
-
-
-
-
-
-
         </div>
         <div class="bg-bg-primary md:w-1/2 flex justify-end mt-6 md:mt-0">
             <img src="images/home.jpeg" alt="Profile Image"
@@ -447,13 +466,14 @@
 
             <hr class="border-main-accent my-6">
 
-            <p class="text-center text-sm">&copy; 2024 Bely Fernando. All rights reserved.</p>
+            <p class="text-center text-sm">&copy; 2025 Bely Fernando. All rights reserved.</p>
         </div>
     </footer>
 
-
-
-
+    <a href="#" id="scrollToTop"
+        class="fixed bottom-6 right-6 bg-main-accent text-white p-4 rounded-full shadow-lg hover:scale-110 transition duration-300 flex items-center justify-center text-2xl">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
     <!-- Flowbite JS -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
