@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Flowbite CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" /> -->
+
+    <!-- Google Fonts (Poppins) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Boxicons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+    <!-- Konfigurasi Tailwind -->
+    <script src="tailwind.config.js"></script>
+
+    <title>Portofolio - Bely Fernando</title>
+</head>
+
+<body class="bg-bg-primary text-text-primary font-poppins cursor-pointer">
+
+    <nav class="bg-transparent dark:bg-transparent backdrop-blur-md fixed top-0 left-0 w-full z-50">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-6 md:px-12 py-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse group">
+                <span
+                    class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white transition-transform duration-300 group-hover:scale-105 group-hover:text-main-accent">
+                    Bely <span class="text-main-accent group-hover:text-white">Fernando</span>
+                </span>
+            </a>
+
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 dark:border-gray-700">
+                    <li>
+                        <a href="#"
+                            class="relative inline-flex py-2 text-primary underline-offset-4 transition-colors duration-300 
+                            hover:text-main-accent after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-0.5 
+                            after:bg-main-accent after:transition-all after:duration-300 after:origin-center hover:after:w-full hover:after:left-0">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#education"
+                            class="relative inline-flex py-2 text-primary underline-offset-4 transition-colors duration-300 
+                            hover:text-main-accent after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-0.5 
+                            after:bg-main-accent after:transition-all after:duration-300 after:origin-center hover:after:w-full hover:after:left-0">
+                            Education
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#service"
+                            class="relative inline-flex py-2 text-primary underline-offset-4 transition-colors duration-300 
+                            hover:text-main-accent after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-0.5 
+                            after:bg-main-accent after:transition-all after:duration-300 after:origin-center hover:after:w-full hover:after:left-0">
+                            Service
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#project"
+                            class="relative inline-flex py-2 text-primary underline-offset-4 transition-colors duration-300 
+                            hover:text-main-accent after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-0.5 
+                            after:bg-main-accent after:transition-all after:duration-300 after:origin-center hover:after:w-full hover:after:left-0">
+                            Project
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact"
+                            class="relative inline-flex py-2 text-primary underline-offset-4 transition-colors duration-300 
+                            hover:text-main-accent after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:w-0 after:h-0.5 
+                            after:bg-main-accent after:transition-all after:duration-300 after:origin-center hover:after:w-full hover:after:left-0">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <section id="home"
+        class="bg-bg-primary text-text-primary min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-24 py-12 md:py-16 pt-20 md:pt-20">
+        <div
+            class="bg-bg-primary md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left space-y-4">
+            <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+                Hi, It's <span class="text-main-accent">Nando</span>
+            </h1>
+
+            <h3 class="text-xl sm:text-2xl md:text-3xl font-medium">
+                I'm a <span id="typing-text" class="text-main-accent"></span>
+            </h3>
+            <p class="text-base sm:text-lg max-w-lg">
+                IT Programmer & Full Stack Developer experienced in Laravel, Tailwind CSS, PHP, and JavaScript.
+                Expert in web development, backend optimization, and system analysis.
+            </p>
+            <div class="flex flex-wrap justify-center md:justify-start space-x-4 mt-4 p-4">
+                <a href="https://www.linkedin.com/in/bely-fernando-116336252/"
+                    class="flex justify-center items-center w-10 h-10 border-2 border-main-accent text-main-accent text-2xl rounded-full transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-[0_0_25px_var(--tw-text-opacity)] hover:bg-main-accent hover:text-bg-primary">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                <a href="https://www.instagram.com/byfndo/"
+                    class="flex justify-center items-center w-10 h-10 border-2 border-main-accent text-main-accent text-2xl rounded-full transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-[0_0_25px_var(--tw-text-opacity)] hover:bg-main-accent hover:text-bg-primary">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+                <a href="https://github.com/7on3Wolf"
+                    class="flex justify-center items-center w-10 h-10 border-2 border-main-accent text-main-accent text-2xl rounded-full transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-[0_0_25px_var(--tw-text-opacity)] hover:bg-main-accent hover:text-bg-primary">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="#"
+                    class="flex justify-center items-center w-10 h-10 border-2 border-main-accent text-main-accent text-2xl rounded-full transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:shadow-[0_0_25px_var(--tw-text-opacity)] hover:bg-main-accent hover:text-bg-primary">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center justify-center md:justify-start gap-4 md:space-x-6 mt-6">
+                <!-- Tombol Hire dengan efek glow -->
+                <a href="https://wa.me/6281384522087?text=Halo,%20saya%20tertarik%20merekrut%20Anda!"
+                    class="relative inline-flex items-center justify-center w-full md:w-40 h-12 bg-main-accent text-black font-bold rounded-full text-lg border-2 border-transparent 
+                    tracking-wide transition-all duration-300 ease-out hover:scale-110 shadow-md md:shadow-[0_0_15px_var(--main-color)] 
+                    before:absolute before:-inset-1 before:rounded-full before:border-2 before:border-main-accent 
+                    before:opacity-75 before:blur-md md:before:blur-lg before:animate-pulse before:transition-all before:duration-500 hover:before:opacity-100">
+                    Hire
+                </a>
+
+                <!-- Tombol Contact dengan efek hover -->
+                <a href="#contact" class="relative inline-flex items-center justify-center w-full md:w-40 h-12 bg-black text-main-accent font-bold rounded-full text-lg border-2 border-main-accent 
+                    tracking-wide transition-all duration-300 ease-out hover:scale-105 hover:bg-main-accent hover:text-black 
+                    hover:shadow-[0_0_20px_var(--main-color)]">
+                    Contact
+                </a>
+            </div>
+
+
+
+
+
+
+        </div>
+        <div class="bg-bg-primary md:w-1/2 flex justify-end mt-6 md:mt-0">
+            <img src="images/home.jpeg" alt="Profile Image"
+                class="w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] mt-12 object-cover rounded-full shadow-lg border-4 border-main-accent transition-all duration-300 hover:shadow-[0_0_20px_#00ffee]">
+        </div>
+
+
+
+    </section>
+
+    <section class="min-h-screen flex flex-col justify-center items-center bg-bg-secondary text-primary py-20 px-6"
+        id="education">
+        <h2 class="text-5xl text-center font-bold mb-16 text-main-accent">Education</h2>
+
+        <div class="relative max-w-4xl mx-auto">
+            <!-- Garis Tengah -->
+            <div
+                class="absolute top-0 bottom-0 left-1/2 w-1 bg-main-accent -translate-x-1/2 shadow-[0_0_15px_#00ffee] hidden md:block">
+            </div>
+
+            <div class="space-y-12">
+                <!-- Elementary School -->
+                <div class="relative flex flex-col md:flex-row items-center">
+                    <div
+                        class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-main-accent rounded-full shadow-[0_0_15px_#00ffee] hidden md:block">
+                    </div>
+                    <div class="w-full md:w-1/2 text-right pr-0 md:pr-10">
+                        <p class="text-xl font-bold text-main-accent">2006</p>
+                        <div
+                            class="bg-bg-secondary border-4 border-main-accent p-6 rounded-3xl shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-[0_0_25px_#00ffee]">
+                            <h3 class="text-xl text-main-accent">Elementary School</h3>
+                            <p class="text-text-primary text-sm">I attended SDN 23 Koto Tangah from 2006 to 2012. I was
+                                active as a student health officer and won class championships several times.</p>
+                        </div>
+                    </div>
+                    <div class="hidden md:block w-1/2"></div>
+                </div>
+
+                <!-- Junior High School -->
+                <div class="relative flex flex-col md:flex-row items-center">
+                    <div class="hidden md:block w-1/2"></div>
+                    <div
+                        class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-main-accent rounded-full shadow-[0_0_15px_#00ffee] hidden md:block">
+                    </div>
+                    <div class="w-full md:w-1/2 pl-0 md:pl-10">
+                        <p class="text-xl font-bold text-main-accent">2012</p>
+                        <div
+                            class="bg-bg-secondary border-4 border-main-accent p-6 rounded-3xl shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-[0_0_25px_#00ffee]">
+                            <h3 class="text-xl text-main-accent">Junior High School</h3>
+                            <p class="text-text-primary text-sm">Attended SMPN 2 Tilatang Kamang from 2012 to 2015,
+                                excelling academically and winning the class meeting football tournament.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Senior High School -->
+                <div class="relative flex flex-col md:flex-row items-center">
+                    <div
+                        class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-main-accent rounded-full shadow-[0_0_15px_#00ffee] hidden md:block">
+                    </div>
+                    <div class="w-full md:w-1/2 text-right pr-0 md:pr-10">
+                        <p class="text-xl font-bold text-main-accent">2015</p>
+                        <div
+                            class="bg-bg-secondary border-4 border-main-accent p-6 rounded-3xl shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-[0_0_25px_#00ffee]">
+                            <h3 class="text-xl text-main-accent">Senior High School</h3>
+                            <p class="text-text-primary text-sm">Attended SMKN 1 Tilatang Kamang from 2015 to 2018,
+                                majoring in Electrical Engineering. Gained hands-on experience in electrical
+                                installations.</p>
+                        </div>
+                    </div>
+                    <div class="hidden md:block w-1/2"></div>
+                </div>
+
+                <!-- College -->
+                <div class="relative flex flex-col md:flex-row items-center">
+                    <div class="hidden md:block w-1/2"></div>
+                    <div
+                        class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-main-accent rounded-full shadow-[0_0_15px_#00ffee] hidden md:block">
+                    </div>
+                    <div class="w-full md:w-1/2 pl-0 md:pl-10">
+                        <p class="text-xl font-bold text-main-accent">2020</p>
+                        <div
+                            class="bg-bg-secondary border-4 border-main-accent p-6 rounded-3xl shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-[0_0_25px_#00ffee]">
+                            <h3 class="text-xl text-main-accent">College</h3>
+                            <p class="text-text-primary text-sm">Graduated from AMIK Bukittinggi in 2023 with an
+                                Associate Degree in Computer Science (A.Md.Kom). Specialized in IT Web Development and
+                                Electrical Installation Technology.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="service"
+        class="min-h-screen flex flex-col justify-center items-center bg-bg-primary text-primary py-20 px-6">
+        <h2 class="text-5xl text-center font-bold mb-16 text-main-accent">Service</h2>
+
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 px-6">
+
+            <!-- Web Developer -->
+            <div
+                class="relative bg-main-accent p-8 rounded-3xl border-4 border-transparent shadow-lg transition-all duration-300 hover:shadow-main-accent/50 hover:border-main-accent hover:scale-105">
+                <h4 class="text-2xl font-semibold mb-3 text-bg-primary">Web Developer</h4>
+                <p class="text-lg text-text-secondary">
+                    Junior Web Developer skilled in Laravel, Tailwind CSS, Bootstrap, MySQL, and JavaScript. Experienced
+                    in building dynamic web applications with clean, efficient code.
+                </p>
+            </div>
+
+            <!-- System Analyst -->
+            <div
+                class="relative bg-main-accent p-8 rounded-3xl border-4 border-transparent shadow-lg transition-all duration-300 hover:shadow-main-accent/50 hover:border-main-accent hover:scale-105">
+                <h4 class="text-2xl font-semibold mb-3 text-bg-primary">System Analyst</h4>
+                <p class="text-lg text-text-secondary">
+                    Expert in requirement analysis, system design, and database optimization. Skilled in translating
+                    business needs into scalable solutions.
+                </p>
+            </div>
+
+            <!-- IT Support -->
+            <div
+                class="relative bg-main-accent p-8 rounded-3xl border-4 border-transparent shadow-lg transition-all duration-300 hover:shadow-main-accent/50 hover:border-main-accent hover:scale-105">
+                <h4 class="text-2xl font-semibold mb-3 text-bg-primary">IT Support</h4>
+                <p class="text-lg text-text-secondary">
+                    Skilled in troubleshooting, system maintenance, and technical support. Strong problem-solving and
+                    customer-focused approach.
+                </p>
+            </div>
+
+            <!-- Electrical Engineering -->
+            <div
+                class="relative bg-main-accent p-8 rounded-3xl border-4 border-transparent shadow-lg transition-all duration-300 hover:shadow-main-accent/50 hover:border-main-accent hover:scale-105">
+                <h4 class="text-2xl font-semibold mb-3 text-bg-primary">Electrical Engineering</h4>
+                <p class="text-lg text-text-secondary">
+                    Specializing in power installation, troubleshooting, and maintenance, ensuring efficient and
+                    reliable systems.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="min-h-screen flex flex-col justify-center items-center bg-bg-secondary text-primary py-20 px-6"
+        id="project">
+        <h2 class="text-5xl text-center font-bold mb-16 text-main-accent">Project</h2>
+
+        <div class="max-w-4xl w-full bg-secondary p-8 rounded-3xl shadow-lg border-4 border-main-accent">
+            <p class="text-lg text-left mb-6">Sigma Enterpriez is an innovative platform currently being developed to
+                provide service solutions to customers. As of now, its development progress has reached 80%🚀</p>
+
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-2">Progress</h3>
+                <div class="w-full bg-text-secondary rounded-full h-6 relative overflow-hidden">
+                    <div class="h-full bg-main-accent w-[80%] rounded-full shadow-[0_0_20px_#00ffee]"></div>
+                </div>
+                <p class="text-right mt-2 text-lg font-semibold text-main-accent">80%</p>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold mb-2">Tools & Technology</h3>
+                <ul class="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
+                    <li class="bg-text-secondary p-3 rounded-lg flex items-center text-left gap-2">
+                        <i class="fab fa-laravel text-main-accent text-xl"></i> Laravel
+                    </li>
+                    <li class="bg-text-secondary p-3 rounded-lg flex items-center text-left gap-2">
+                        <i class="fas fa-code text-main-accent text-xl"></i> Tailwind CSS
+                    </li>
+                    <li class="bg-text-secondary p-3 rounded-lg flex items-center text-left gap-2">
+                        <i class="fas fa-database text-main-accent text-xl"></i> MySQL
+                    </li>
+                    <li class="bg-text-secondary p-3 rounded-lg flex items-center text-left gap-2">
+                        <i class="fab fa-js text-main-accent text-xl"></i> JavaScript
+                    </li>
+                    <li class="bg-text-secondary p-3 rounded-lg flex items-center text-left gap-2">
+                        <i class="fas fa-desktop text-main-accent text-xl"></i> Mazer Admin
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="contact py-20 bg-primary text-primary" id="contact">
+        <div class="container max-w-6xl mx-auto px-6 lg:px-12">
+            <h2 class="text-5xl text-center font-bold mb-12 text-main-accent">Contact</h2>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Contact Form -->
+                <div class="bg-secondary p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-main-accent mb-6">Get in Touch</h3>
+
+                    <form id="whatsappForm">
+                        <div class="mb-4">
+                            <label for="name" class="block text-sm font-medium text-primary">Name</label>
+                            <input type="text" id="name"
+                                class="w-full p-3 rounded-md bg-text-secondary text-primary border-none outline-none"
+                                required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-sm font-medium text-primary">Email</label>
+                            <input type="email" id="email"
+                                class="w-full p-3 rounded-md bg-text-secondary text-primary border-none outline-none"
+                                required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-sm font-medium text-primary">Message</label>
+                            <textarea id="message" rows="4"
+                                class="w-full p-3 rounded-md bg-text-secondary text-primary border-none outline-none"
+                                required></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-main-accent text-text-secondary py-3 rounded-md font-semibold shadow-md hover:opacity-90 transition">
+                            Send Message
+                        </button>
+                    </form>
+
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-main-accent mb-6">Contact Information</h3>
+                    <p class="text-lg text-primary mb-4">Feel free to reach out through the following channels:</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center space-x-4">
+                            <i class="fas fa-envelope text-main-accent text-xl"></i>
+                            <span>belyfernando21@gmail.com</span>
+                        </li>
+                        <li class="flex items-center space-x-4">
+                            <i class="fas fa-phone text-main-accent text-xl"></i>
+                            <span>+62 813-8452-2087</span>
+                        </li>
+                        <li class="flex items-center space-x-4">
+                            <i class="fas fa-map-marker-alt text-main-accent text-xl"></i>
+                            <span>Bukittinggi, Indonesia</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-bg-secondary text-primary py-10">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <!-- About Me (Kiri) -->
+                <div class="flex flex-col items-center md:items-start">
+                    <h2 class="text-2xl font-bold text-main-accent">Bely Fernando</h2>
+                    <p class="text-sm mt-2 max-w-xs">
+                        Full Stack Web Developer | Passionate about building digital solutions.
+                    </p>
+                </div>
+
+                <!-- Quick Links (Tengah) -->
+                <div class="flex flex-col items-center">
+                    <h3 class="text-xl font-semibold text-main-accent mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="hover:text-main-accent transition">About Me</a></li>
+                        <li><a href="#projects" class="hover:text-main-accent transition">Projects</a></li>
+                        <li><a href="#skills" class="hover:text-main-accent transition">Skills</a></li>
+                        <li><a href="#contact" class="hover:text-main-accent transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media (Kanan) -->
+                <div class="flex flex-col items-center md:items-end">
+                    <h3 class="text-xl font-semibold text-main-accent mb-4">Follow Me</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/7on3Wolf"
+                            class="p-2 bg-secondary rounded-full hover:bg-main-accent transition">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/bely-fernando-116336252/"
+                            class="p-2 bg-secondary rounded-full hover:bg-main-accent transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="p-2 bg-secondary rounded-full hover:bg-main-accent transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/byfndo/"
+                            class="p-2 bg-secondary rounded-full hover:bg-main-accent transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-main-accent my-6">
+
+            <p class="text-center text-sm">&copy; 2024 Bely Fernando. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- Flowbite JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="sripct.js"></script>
+
+</body>
+
+</html>
